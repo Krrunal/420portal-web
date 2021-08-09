@@ -32,6 +32,6 @@ class MessageMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('420Portal - Message')->view('mail.message');
+        return $this->subject('420Portal - New Message')->view('mail.message');
     }
 }
