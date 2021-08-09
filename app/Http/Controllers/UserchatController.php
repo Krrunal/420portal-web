@@ -8,6 +8,9 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use App\User;
 use App\Models\UserChat;
+use App\Mail\MessageMail;
+use Mail;
+use Log;
 
 class UserchatController extends Controller
 {
@@ -50,6 +53,22 @@ class UserchatController extends Controller
             'user_to' => $request->input('receiver'),
             'message' => $request->input('message')
         ])->created_at;
+
+        $receiver = User::find($request->input('receiver'));
+
+
+        $sender_name = $user->name;
+        $sender_link = $user->username;
+        $receiver_name = $receiver->name;
+        $receiver_link = $receiver->username;
+        $receiver_email = $receiver->email;
+
+        try {
+            Mail::to($receiver_email)->send(new MessageMail($sender_name, $sender_link, $receiver_name, $receiver_link));
+        } catch (\Throwable $th) {
+            //throw $th;
+            Log::error($th);
+        }
 
         return ['status' => true, 'created_at' => $created_at];
     }
