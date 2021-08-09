@@ -598,6 +598,8 @@ export default {
 
           let uri = '/comment/add'
 
+          this.posts[index].comment_text = ''
+
           this.axios.post(uri, params).then((response) => {
             if (this.user != this.posts[index].user_id) {
               let noti_fb = firebase
@@ -609,7 +611,6 @@ export default {
                 type: 'comment',
               })
             }
-            this.posts[index].comment_text = ''
             this.posts[index].count_comment++
             $('#app').removeClass('focus_comment')
           })
