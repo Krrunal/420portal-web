@@ -265,7 +265,7 @@
         position: fixed;
         bottom: 72px;
         right: 0;
-        z-index: 100;
+        z-index: 101;
     }
 
     .rightmargin {
