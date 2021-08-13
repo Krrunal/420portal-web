@@ -99,6 +99,13 @@
                     color: white;
                     font-size: 15px;
                 }
+
+                &.liked {
+
+                  svg {
+                    color: red;
+                  }
+                }
             }
             .comment_icon {
                 float: left;
