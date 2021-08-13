@@ -871,7 +871,6 @@ export default {
                 }
             }
             .price-data {
-                font-size: 14px !important;
                 span {
                     padding-right: 0px !important;
                 }
