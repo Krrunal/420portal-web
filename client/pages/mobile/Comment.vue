@@ -481,6 +481,7 @@
         background-color: #000;
     }
     .comment_body {
+        font-size: 16px;
         margin-top: 50px;
         overflow-y: auto;
         height: calc(100vh - 200px);
