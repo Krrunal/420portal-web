@@ -237,7 +237,7 @@
     </div>
     <vs-popup class="active_popup" type="border" title :active.sync="openActivatePopup" v-if="is_edit && brand_form">
       <div class="text-center py-3">
-        <button class="btn btn-primary mr-3" @click="activeBrand()">
+        <button class="btn btn-420 mr-3" @click="activeBrand()">
           {{ brand_form.is_active ? 'Deactivate' : 'Activate' }}
         </button>
         <button class="btn btn-420" @click="deleteBrand()">Delete</button>
