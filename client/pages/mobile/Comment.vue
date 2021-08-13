@@ -551,6 +551,7 @@ export default {
     color: #efa720;
     float: left;
     margin-left: 10px;
+    width: 85%;
   }
 
   img {
