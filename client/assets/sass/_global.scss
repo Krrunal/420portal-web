@@ -304,6 +304,13 @@ header {
             margin: 0;
             color: white;
           }
+
+          &.liked {
+
+            svg {
+              color: red;
+            }
+          }
         }
         .comment_icon {
           float: left;

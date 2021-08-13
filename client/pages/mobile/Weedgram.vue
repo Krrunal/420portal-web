@@ -144,7 +144,7 @@
               <fa :icon="['far', 'heart']" fixed-width />
               <p>{{ item.likes }}</p>
             </div>
-            <div class="heart_icon" @click="unlikepost(index)" v-else>
+            <div class="heart_icon liked" @click="unlikepost(index)" v-else>
               <fa icon="heart" fixed-width />
               <p>{{ item.likes }}</p>
             </div>
