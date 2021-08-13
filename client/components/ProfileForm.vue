@@ -142,7 +142,7 @@
     </button>
     <vs-popup class="active_popup" type="border" title :active.sync="openActivatePopup" v-if="mode == 'edit'">
       <div class="text-center py-3">
-        <button class="btn btn-primary mr-3" @click="activeUser">{{ is_active ? 'Deactivate' : 'Activate' }}</button>
+        <button class="btn btn-420 mr-3" @click="activeUser">{{ is_active ? 'Deactivate' : 'Activate' }}</button>
         <button class="btn btn-420" @click="deleteUser">Delete</button>
       </div>
     </vs-popup>

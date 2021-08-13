@@ -32,7 +32,7 @@
                         <label for="state_license">State License #</label>
                     </div>
                     <div class="text-center py-3">
-                        <button class="btn btn-primary mr-3" @click="activeUser">{{selected.is_active ? 'Deactivate' : 'Activate'}}</button>
+                        <button class="btn btn-420 mr-3" @click="activeUser">{{selected.is_active ? 'Deactivate' : 'Activate'}}</button>
                         <button class="btn btn-420" @click="deleteUser">Delete</button>
                     </div>
                 </vs-popup>
