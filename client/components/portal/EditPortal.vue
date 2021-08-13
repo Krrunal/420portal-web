@@ -451,7 +451,7 @@
                     <label for="activate_state_license">State License #</label>
                 </div>
                 <div class="text-center py-3">
-                    <button class="btn btn-primary mr-3" @click="activatePortal">{{portal.is_active ? 'Deactivate' : 'Activate'}}</button>
+                    <button class="btn btn-420 mr-3" @click="activatePortal">{{portal.is_active ? 'Deactivate' : 'Activate'}}</button>
                     <button class="btn btn-420" @click="deletePortal">Delete</button>
                 </div>
             </div>
