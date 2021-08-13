@@ -362,7 +362,7 @@ import { mapGetters } from "vuex";
         }
 
         .chat_body {
-            height: calc(100vh - 258px);
+            height: calc(100vh - 248px);
             background-color:#000;
             padding-top: 5px;
             padding-bottom: 5px;
