@@ -56,7 +56,8 @@ class Media extends Model
         $extension = $path_parts['extension'];
         $new_filepath = $path_parts['dirname']."/".$filename . "_1.".$extension;
 
-        $lowBitrateFormat = (new \FFMpeg\Format\Video\X264('libmp3lame', 'libx264'))->setKiloBitrate(250);
+        $lowBitrateFormat = (new \FFMpeg\Format\Video\X264('aac', 'libx264'))->setKiloBitrate(250);
+		
         FFMpeg::fromDisk('video_root')
             ->open($old_filepath)
             ->addFilter(function ($filters) {
