@@ -56,6 +56,9 @@
                 <p>Logout</p>
               </a>
             </li>
+            <li>
+              <span class="badge badge-pill badge-success messenger-unread" style="position:absolute;top: 5px;">{{user.username}}</span>
+            </li>
           </ul>
           <ul v-else>
             <li>
@@ -116,6 +119,7 @@
                 <p>News</p>
               </a>
             </li>
+            <li v-if="user"><span class="badge badge-pill badge-success messenger-unread" style="position:absolute;top: 5px;">{{user.username}}</span></li>
           </ul>
           <a href="javascript:;" class="btn-login" data-toggle="modal" data-target="#loginmodal" v-if="!user">
             <img src="~assets/imgs/icon-sign-in.png" height="30" alt="" />
