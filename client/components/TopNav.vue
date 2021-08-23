@@ -119,7 +119,13 @@
                 <p>News</p>
               </a>
             </li>
+<<<<<<< Updated upstream
             <li v-if="user"><span class="badge badge-pill badge-success messenger-unread" style="position:absolute;top: 5px;">{{user.username}}</span></li>
+=======
+            <li v-if="user">
+              <span  class="badge badge-pill badge-success messenger-unread" style="position:absolute;top: 5px;">{{user.username}}</span>
+            </li>
+>>>>>>> Stashed changes
           </ul>
           <a href="javascript:;" class="btn-login" data-toggle="modal" data-target="#loginmodal" v-if="!user">
             <img src="~assets/imgs/icon-sign-in.png" height="30" alt="" />
